@@ -1,15 +1,5 @@
-import type {Book} from './types';
+import BookList from './BookList';
 import { Typography } from "@mui/material";
-
-const renderBooks = (books: Book[]) => {
-  return <div data-test='book-list'>
-    {books.map(book => (
-          <div className="book-item">
-            <h2 className="title">{book.name}</h2>
-          </div>
-        ))}
-  </div>
-}
 
 function App() {
   const books = [
@@ -20,7 +10,7 @@ function App() {
       <Typography variant="h2" component="h2" data-test="heading">
         Book
       </Typography>
-      {renderBooks(books)}
+      <BookList books={books} />
     </>
   );
 }
