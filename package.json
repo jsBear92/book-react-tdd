@@ -14,6 +14,7 @@
     "@types/node": "^16.18.91",
     "@types/react": "^18.2.67",
     "@types/react-dom": "^18.2.22",
+    "axios": "^1.6.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
@@ -25,7 +26,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "e2e": "cypress run"
+    "e2e": "cypress run",
+    "stub-server": "json-server --watch db.json --port 8080"
   },
   "eslintConfig": {
     "extends": [
